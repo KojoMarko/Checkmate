@@ -30,6 +30,9 @@ class MockAuthService extends ChangeNotifier implements AuthService {
   @override
   Future<void> signOut() async {}
   
+  @override
+  Future<User?> signInWithGoogle() async => _mockUser;
+  
   Stream<User?> authStateChanges() => Stream.value(_mockUser);
 }
 
