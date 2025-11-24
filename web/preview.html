@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckMate - App Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(135deg, #a8e6cf 0%, #90d5ff 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .icon {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+        
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            color: #424242;
+            margin-bottom: 8px;
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            text-align: center;
+            color: #666;
+            margin-bottom: 32px;
+        }
+        
+        .form-group {
+            margin-bottom: 16px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #424242;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(66, 66, 66, 0.3);
+            border-radius: 10px;
+            font-size: 14px;
+            font-family: 'Raleway', sans-serif;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: #424242;
+            box-shadow: 0 0 0 3px rgba(66, 66, 66, 0.1);
+        }
+        
+        .forgot-link {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        
+        .forgot-link a {
+            color: #424242;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+        .forgot-link a:hover {
+            color: #1DA2BD;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 16px 24px;
+            background-color: #424242;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: 'Raleway', sans-serif;
+            margin-bottom: 24px;
+        }
+        
+        .btn:hover {
+            background-color: #2d2d2d;
+        }
+        
+        .signup-link {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .signup-link a {
+            color: #424242;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+        .signup-link a:hover {
+            color: #1DA2BD;
+        }
+        
+        .info-box {
+            background: #f0f7ff;
+            border-left: 4px solid #1DA2BD;
+            padding: 12px;
+            margin-top: 20px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🔒</div>
+        <div class="title">Welcome Back</div>
+        <div class="subtitle">Sign in to your CheckMate account</div>
+        
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+        
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password">
+        </div>
+        
+        <div class="forgot-link">
+            <a href="#">Forgot Password?</a>
+        </div>
+        
+        <button class="btn">Sign In</button>
+        
+        <div class="signup-link">
+            Don't have an account? <a href="#">Sign Up</a>
+        </div>
+        
+        <div class="info-box">
+            📱 This is a preview of your CheckMate login screen. Your Flutter app is being developed!
+        </div>
+    </div>
+</body>
+</html>
